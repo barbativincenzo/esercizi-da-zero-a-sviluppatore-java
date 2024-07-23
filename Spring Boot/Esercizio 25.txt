@@ -1,0 +1,4 @@
+
+ESERCIZIO
+In impiegatoRest, creare una ricerca per nome.
+Suggerimento: è copia e incolla di ricerca per cognome
