@@ -1,0 +1,8 @@
+
+
+ESERCIZIO
+Creare un sotto package di dto chiamato builder. All'interno
+di questo sotto package, creare una classe chiamata ImpiegatoDtoBuilder
+con un metodo che prende in ingresso un ImpiegatoDto e ritorna
+un Impiegato. Il metodo deve essere chiamato fromDtoToEntity.
+public Impiegato fromDtoToEntity(ImpiegatoDto impDto)

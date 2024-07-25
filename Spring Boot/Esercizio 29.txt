@@ -1,0 +1,5 @@
+ESERCIZIO
+In ImpiegatoRest, nel metodo di inserimento e di update,
+usare il metodo fromDtoToEntity per trasformare il dto 
+in ingresso in Impiegato.  
+ps eliminare il codice precedente che fa già queste cose

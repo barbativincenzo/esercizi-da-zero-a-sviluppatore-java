@@ -1,0 +1,3 @@
+ESERCIZIO
+In impiegatoDtoBuilder, rendere i due metodi statici e modificare
+di conseguenza i metodi update e insert di ImpiegatoRest.

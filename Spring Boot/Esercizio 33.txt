@@ -1,0 +1,13 @@
+ESERCIZIO
+In views, creare una cartella impiegato e crearci dentro
+una pagina inserisciImpiegato.jsp con scritto "ciao mamma".
+
+nel packge ctr, creare una classe ImpiegatoCtr (con requestmapping 
+impiegato)con un metodo mappato sull url "preInserisciImpiegato".
+Questo metodo mi deve aprire la inserisciImpiegato.jsp.
+
+Nella home aggiungere il seguente codice:
+<a href="/impiegato/preInserisciImpiegato">Visita la Pagina</a>
+
+Cliccandoci sopra viene aperta la pagina inserisciImpiegato.jsp
+attenzione: il metodo non deve ritornare solo "inserisciImpiegato" ma anche la cartella "impiegato/inserisciImpiegato"

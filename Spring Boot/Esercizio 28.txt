@@ -1,0 +1,5 @@
+
+ESERCIZIO
+In ImpiegatoDtoBuilder, aggiungere il seguente metodo:
+public ImpiegatoDto fromEntityToDto(Impiegato imp)
+e trasformare l'impiegato in ingresso in ImpiegatoDTO.

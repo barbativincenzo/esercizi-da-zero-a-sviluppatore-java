@@ -1,0 +1,776 @@
+-ESERCIZIO: creare una nuova classe RuoloDaoJdbc
+nel package dao.
+creare un metodo inserisci
+public void inserisci(Ruolo r)
+creare nel package com una classe 
+chiamata TestRuolo con un main.
+Nel main creare una istanza della classe
+Ruolo e popolarla.
+creare, sempre nel main, una istanza della 
+classe RuoloDaoJdbc e richiamare il metodo
+inserisci, passando in ingresso l'istanza
+creata della classe Ruolo. 
+
+
+ESERCIZIO
+nel database, aggiungere alla tabella
+storico due colonne di tipo Date: 
+data_inizio, data_fine
+Nella classe Storico, aggiungere i campi
+dataInizio, dataFine. Aggiungere anche i 
+rispettivi metodi get/set.
+Creare una classe StoricoDaoJdbc dentro ilpackage
+doa con un metodo: 
+public void inserisci(Storico s)
+Nel package com, creare una classe TestStorico 
+con un main. Nel main creare una istanza di Storico
+e popolarla.
+Creare una istanza di StoricoDaoJdbc e richiamare
+il metodo inserisci, passando come parametro l'
+istanza di storico creata.
+
+
+
+ESERCIZIO
+In ImpiegatoDaoJdbc, aggiungere il 
+seguente metodo:
+public void aggiorna(Impiegato i)
+aggiornare tutti i campi della classe impiegato
+(nome, cognome, etc).
+Nel main di TestImpeigato, creare una istanza di Impiegato, valorizzarla
+con tutti i dati (anche con l'id) e richiamare il
+metodo aggiorna di ImpiegatoDaoJdbc.
+
+
+ESERCIZIO
+In RuoloDaoJdbc, aggiungere il 
+seguente metodo:
+public void aggiorna(Ruolo i)
+aggiornare tutti i campi della classe Ruolo
+(descrizione).
+Nel main di TestRuolo, creare una istanza di Ruolo, valorizzarla
+con tutti i dati (anche con l'id) e richiamare il
+metodo aggiorna di RuoloDaoJdbc.
+
+
+ESERCIZIO
+dentro la classe StoricoDaoJdbc, aggiungere il metodo 
+elimina:
+public void elimina(int idStorico)
+Testare il metodo nel main della classe TestStorico.
+
+
+ESERCIZIO
+nella classe TestImpeigato,eliminare o commentare tutto il
+codice precedente. Dentro il main, effetturare una ricerca
+impiegato per idImpiegato e stampare il contenuto trovato.
+
+ESERCIZIO
+aggiungere dentro impiegatodaojdbc il metodo:
+public Impiegato ricercaPerId(int matricola)
+spostare il codice del main dentro il metodo appena creato.
+La matricola presa come parametro sarà la matricola dell
+impiegato da ricercare.
+NB i dati trovati vanno inseriti dentro un oggetto impiegato.
+questo oggetto impiegato sarà quello che ritorna il metodo.
+dal main invocare il metodo ricercaPerId ottenendo
+un oggetto di tipo Impiegato. Stampare i valori  
+dell impiegato trovato (nel main).
+
+
+ESERCIZIO
+aggiungere dentro ruolodaojdbc il metodo:
+public Ruolo ricercaPerId(int matricola)
+che fa  mi ritorna il ruolo con l idruolo indicato nel 
+parametro.
+NB i dati trovati vanno inseriti dentro un oggetto ruolo.
+questo oggetto ruolo sarà quello che ritorna il metodo.
+dal main invocare il metodo ricercaPerId ottenendo
+un oggetto di tipo ruolo. Stampare i valori  
+dell ruolo trovato (nel main).
+
+ESERCIZIO
+dentro TestImpeigato, nel main, fare una query che 
+mi mostra tutti gli impiegati con quel nome.
+
+ESERCIZIO
+aggiungere dentro impiegatodaojdbc il metodo:
+public List<Impiegato> ricercaPerNome(String nome)
+spostare il codice del main dentro il metodo appena creato.
+Il nome  preso come parametro sarà il nome dell
+impiegato da ricercare.
+NB i dati trovati vanno inseriti dentro una lista di impiegati.
+questa lista  sarà ritornata dal metodo.
+dal main invocare il metodo ricercaPerNome ottenendo
+un lista di  Impiegato. Stampare i valori  
+degli  impiegati trovati (nel main).
+
+
+ESERCIZIO
+aggiungere dentro storicodaojdbc il metodo:
+public List<Storico> ricercaPerIdImpiegato(int idImpiegato)
+che  mi ritorna la lista degli storici che hanno quell'
+impiegato.
+dal main invocare il metodo ricercaPerIdImpiegato ottenendo
+una lista di storici e stamparla.
+
+ESERCIZIO
+aggiungere dentro storicodaojdbc il metodo:
+public List<Storico> ricercaPerIdRuolo(int idRuolo)
+che  mi ritorna la lista degli storici che hanno quell'
+Ruolo.
+dal main invocare il metodo ricercaPerIdRuolo ottenendo
+una lista di storici e stamparla.
+
+ESERCIZIO
+aggiungere dentro storicodaojdbc il metodo:
+public List<Storico> ricercaPerDataEIdRuolo(Date dateInp, int idRuolo)
+che  mi ritorna la lista degli storici che hanno una data 
+inizio e data fine che comprendono la dateInp  e
+quel determinato idruolo.
+dal main invocare il metodo ricercaPerDataEIdRuolo ottenendo
+una lista di storici e stamparla.
+
+
+ESERCIZIO
+aggiungere dentro impiegatodaojdbc il metodo:
+public List<Impiegato> ricercaPerCognome(String tmp)
+Restituisce tutti gli impiegati il cui cognome inizia
+con il valore contenuto in tmp.
+dal main invocare il metodo ricercaPerCognome ottenendo
+un lista di  Impiegato. Stampare i valori  
+degli  impiegati trovati (nel main).
+
+ESERCIZIO
+Creare un package chiamato ctr. all'interno creare
+una servlet chiamata ImpiegatoCtr. Nel metodo doget
+stampare "ciao mondo". Invocare la servlet da chrome.
+
+
+ESERCIZIO
+all'interno del package ctr, creare
+una servlet chiamata RuoloCtr. Nel metodo doget
+stampare "ciao mondo". Invocare la servlet da chrome.
+
+ESERCIZIO
+all'interno del package ctr, creare
+una servlet chiamata StoricoCtr. Nel metodo doget
+stampare "ciao mondo". Invocare la servlet da chrome.
+
+ESERCIZIO
+Nella servlet ImpiegatoCtr, effettuare una ricerca per 
+matricola, stampare l'impiegato trovato.
+Ossia, istanziare ImpiegatoDao e richiamare il metodo che
+ricerca tramite matricola.
+-Dentro ImpiegatoCtr, nel metodo doGet
+-creare una variabile del tipo ImpiegatoDaoJdbc
+-richiamare il metodo ricercaPerMatricola
+-passare come matricola quello che volete
+-questo metodo mi ritorna un Impiegato
+-stampare questo impiegato sulla console
+Suggerimento: copiate e incollate il codice che avevate nel
+main.
+
+
+ESERCIZIO
+Nella servlet RuoloCtr, effettuare una ricerca per 
+idRuolo, stampare il ruolo trovato.
+
+
+ESERCIZIO
+Nella servlet StoricoCtr, effettuare una ricerca per 
+idStorico, stampare il ruolo trovato.
+
+ESERCIZIO
+Nella servlet ImpiegatoCtr, leggere un parametro da url
+(chiamato msg) e stamparlo a video.
+
+
+ESERCIZIO
+In ImpiegatoCtr, leggere un parametro chiamato m.
+Trasformare questo m in un intero e usarlo per la
+ricerca Impiegato per Matricola.
+
+ESERCIZIO
+In impiegatoctr, aggiungere un parametro chiamato
+tipoOperazione. Dentro la servlet se tipoOperazione
+è uguale a ricercaPerMatricola effettuate la ricerca per
+matricola, altrimenti stampate Operazione Non Riconosciuta
+
+ESERCIZIO
+In RuoloCtr, aggiungere un parametro chiamato
+tipoOperazione. Dentro la servlet se tipoOperazione
+è uguale a ricercaPerId effettuate la ricerca per
+id, altrimenti stampare Operazione Non Riconosciuta
+
+
+ESERCIZIO
+In ruoloctr, gestire anche il caso in cui l id non venga
+trovato, stampando  il msg "Ruolo Non trovato".
+Fare la stessa cosa con ImpiegatoCtr.
+
+ESERCIZIO
+In Impiegatoctr, se tipoOperazione è uguale a ricercaPerCognome
+allora effettuare la ricerca per cognome.
+
+ESERCIZIO
+In StoricoCtr, se tipoOperazione è uguale a ricercaPerId
+allora effettuare la ricerca per la id storico.
+
+ESERCIZIO
+In StoricoCtr, se tipoOperazione è uguale a ricercaPerIdImpiegato
+allora effettuare la ricerca per la id impiegato.
+
+ESERCIZIO
+In Impiegatoctr, se tipoOperazione è uguale a inserisci
+allora leggere tutti i dati dell impiegato dall url
+ed effettuare l inserimento dell impiegato nel db.
+
+ESERCIZIO
+In Stocioctr, se tipoOperazione è uguale a inserisci
+allora leggere tutti i dati del storico dall url
+ed effettuare l inserimento dell storico nel db.
+
+
+ESERCIZIO
+In Impiegatoctr, se tipoOperazione è uguale a update
+allora leggere tutti i dati dell impiegato dall url
+ed effettuare l update dell impiegato nel db.
+
+ESERCIZIO
+dentro Gestionale, creare una pagina chiamata inserisciruolo.html
+e nel body scrivere hello world.
+Invocarla da browser.
+
+ESERCIZIO
+Creare una pagina home.html. Inserire due link:
+uno che  punta al sito google e l'altro ad amazon.
+
+ESERCIZIO
+nella pagina home.html eliminare i tag dell'esercizio precedente.
+Creare un elenco puntato con una sola voce in cui c'è
+un link che punta alla pagina inserisciruolo.html 
+e il testo da mostrare è "inserimento ruolo".
+nella home deve apparire un elenco puntato che ha solo
+ una voce con scritto "inserisci ruolo". Se ci clicco 
+ sopra mi apre la pagina inserisciruolo.html
+ 
+ESERCIZIO
+Nella pagina inserisciruolo.html, eliminare i tags dell
+esercizio precedente. Creare un form con 
+una casella di testo con scritto "descrizione" ed un 
+tasto con scritto "Salva". Nell action del form
+dovete mettere www.google.com
+
+ESERCIZIO
+Nella pagina inserisciruolo, nell'action scrivere l url
+della servlet RuoloCtr, aggiungere
+l inputtype di tipo testo con name tipoOperazione e
+aggiungere l attributo name anche all inputtype descrizione.
+ In ruoloctr, come prima istruzione, stampare il valore
+del parametro descrizione e di tipoOperazione
+
+
+ESERCIZIO
+In ruoloctr, se tipoOperazione è uguale a inserisci,
+allora leggere la descrizione dall url(ossia come parametro)
+e inserire nel db un ruolo con la descrizione indicata.
+NB i test li dobbiamo fare dalla pagina inserisciruolo.
+cioe nella pagina iio inserisco la descrizione e 
+tipoOperazione uguale a  "inserisci". Clicco salva 
+e viene salvato nel db il ruolo con la descrizione indicata 
+
+ESERCIZIO
+creare una nuova pagina inserisciImpiegato.html.
+Inserire i campi necessari per poter inserire un nuovo
+impiegato.
+Aggiungere nella home.html il link per raggiungere 
+inserisciImpiegato.html.
+
+ESERCIZIO
+creare una nuova pagina inserisciStorico.html.
+Inserire i campi necessari per poter inserire un nuovo
+storico.
+Aggiungere nella home.html il link per raggiungere 
+inserisciStorico.html.
+
+ESERCIZIO
+creare una pagina inserimentoStoricoSuccess.html.
+Inserire il msg "STORICO INSERITO CON SUCCESSO" 
+ed un link per tornare alla home.
+Far richiamare questa pagina da StoricoCtr, dopo
+aver inserito uno storico.
+
+ESERCIZIO
+creare una pagina risultatiRicercaImpiegatoPerMatricola.jsp.
+creare una variabile java di intero e stamparla
+sulla pagina jsp.
+
+ESERCIZIO
+nella pagina risultatiRicercaImpiegatoPerMatricola.jsp,
+creare una istanza di Impiegato, popolarla e stamparla
+sulla jsp.
+
+ESERCIZIO
+Creare una pagina ricercaImpiegatoPerMatricola.html.
+In questa pagina ci sarà un form con un input type di 
+tipo numerico per poter inserire la matricola impiegato.
+
+ESERCIZIO
+fare in modo che impiegatoctr, nel caso di ricerca per
+matricola, apra la pagina risultatiRicercaImpiegatoPerMatricola.jsp.
+Inoltre, deve mettere nella sessione l'impiegato trovato,
+con la label "impiegatoTrovato".
+nella pagina risultatiRicercaImpiegatoPerMatricola.jsp,
+cancellare il codice java precedente.
+prendere dalla sessione l impiegato con label 
+"impiegatoTrovato" e stamparlo.
+riepilogando:
+in impiegatoctr, nel caso di ricerca per matrico,
+ dobbiamo fare due operazioni:
+	- inserire nella sessione l impiegato trovato con 
+	la label "impiegatoTrovato"
+	- fare il forward alla pagina risultatiRicercaImpiegatoPerMatricola.jsp
+in risultatiRicercaImpiegatoPerMatricola.jsp:
+	- cancellare il codice java esempio precedente.
+	- prendere dalla sessione l impiegato con label
+	"impiegatoTrovato" e stamparlo sulla pagina.
+	
+ESERCIZIO
+creare una pagina ricercaRuoloPerId.html. Dentro questa 
+pagina, creare un form con l id da ricercare e tipoOperazione
+uguale a ricercaPerIdRuolo. In ruoloctr, effettuare la ricerca
+per id ruolo e stampare il risultato nella console.
+
+ESERCIZIO
+In ruoloctr, mettere il risultato nella sessione con 
+etichetta "ruolotrovato" e fare forward sulla pagina
+risultatiRicercaRuoloPerId.jsp (creare anche questa pagina).
+In risultatiRicercaPerId.jsp, prendere il ruolo con 
+etichetta "ruolotrovato" dalla sessione e stamparlo.
+
+ESERCIZIO
+creare una pagina ricercaStoricoPerId.html. Dentro questa 
+pagina, creare un form con l id da ricercare e tipoOperazione
+uguale a ricercaPerIdStorico. In storicoctr, effettuare la ricerca
+per id storico e mettere il risultato nella sessione con 
+etichetta "storicotrovato" e fare forward sulla pagina
+risultatiRicercaStoricoPerId.jsp (creare anche questa pagina).
+In risultatiRicercaStoricoPerId.jsp, prendere lo storico con 
+etichetta "storicotrovato" dalla sessione e stamparlo.
+
+
+	
+ESERCIZIO
+creare una pagina risultatiRicercaStoricoPerIdImpiegato.html
+creare una tabella html con le seguenti colonne:
+idStorico, IdImpiegato, IdRuolo, DataInizio,DataFine.
+Inserire due righe con valori a caso.
+
+ESERCIZIO
+Dentro storico fare l override del metodo toString.
+creare una pagina ricercaStoricoPerIdImpiegato.html.
+aggiungere un form che permetta la ricerca degli storici
+con quell id Impiegato (in pratica c è un form con un
+id impiegato e tipoOperazione)
+Nella servlet effettuare la ricerca e mettere la lista 
+dei risultati nella sessione con etichetta "risultatiRicercaStorico".
+creare una pagina risultatiRicercaStoricoPerIdImpiegato.jsp
+leggere la lista dalla sessione con etichetta "risultatiRicercaStorico"
+e stamparla.
+
+
+ESERCIZIO
+Riprendere l'esercizio precedente e fare stampare i risultati
+in forma tabellare.
+
+ESERCIZIO
+creare una pagina ricercaImpiegatoPerCognome.html.
+In impiegatoctr effetture la ricerca per cognome e aprire
+una pagina chiamata risultatiRicercaImpiegatoPerCognome.jsp
+e stampare i risultati trovati in forma tabellare.
+
+ESERCIZIO
+nella pagina risultatiRicercaRuoloPerId.jsp, dare la possibilita
+di aggiornare la descrizione. Dopo che la descrizione è stata
+aggiornata, creare un pagina aggiornamentoRuoloSuccess.jsp
+e stampate il messaggio "AGGIORNAMENTO EFFETTUATO CON SUCCESSO".
+
+ESERCIZIO
+fare la stessa cosa per ruolo e storico
+
+ESERCIZIO
+nella pagina risultatiRicercaImpiegatoPerCognome.jsp, per ogni riga
+aggiungere due colonne: nella prima colonna aggiungere 
+un link a google con scritto Modifica, nella seconda colonna
+aggiungere un link a google con scritto Cancella.
+
+
+ESERCIZIO
+nella pagina risultatiRicercaImpiegatoPerCognome.jsp, nel link
+con scritto elimina passare i seguenti parametri: l id dell
+impiegato della riga selezionata e tipoOperazione=elimina
+
+
+ESERCIZIO
+cliccando il tasto elimina si deve eliminare l impiegato
+selezionato e ci deve apparire una pagina eliminazioneImpiegatoSuccess.html
+che mostra il msg "CANCELLAZIONE EFFETTUATA CON SUCCESSO" 
+e un link per tornare alla home.
+ps eliminare solo impiegati che non sono presenti sulla tabella storico
+
+ESERCIZIO
+Nell'esercizio precedente, gestire il caso in cui l impiegato
+sia presente sulla tabella storico.
+Ossia quando si elimina l impiegato, eliminare PRIMA dalla tabella
+storico tutti gli storici con quell idimpiegato e DOPO eliminare
+l impiegato dalla tabella Impiegato;
+creare dentro StoricoDaoJdbc, il metodo eliminaStoricoDaImpiegato che eliminerà tutte le righe di storico relative a quell impiegato.
+In impiegatoCtr, richiamare il metodo eliminaStoricoDaImpiegato di StoricoDaoJdbc, e dopo richiamare il metodo elimina di ImpiegatoDaoJdbc
+SUGGERIMENTO: esercizio diviso in due parti
+	- creare su StoricoDaoJdbc un metodo che prende in ingresso
+	un idImpiegato ed elimina gli storici con quell id.
+	- richiamare da ImpiegatoCtr, nel case di elimina, il metodo
+	su creato PRIMA di impiegatodaojdbc.elimina
+
+ESERCIZIO
+nella pagina risultatiRicercaImpiegatoPerCognome.jsp,
+installare bootstrap e fare i link colorati a piacere.
+
+
+ESERCIZIO
+nella ricerca storico per idimpiegato, nella tabella dei risultati
+inserire due link, uno per modifica e uno per elimina.
+e fare funzionare SOLO QUELLO di elimina.
+
+ESERCIZIO
+in risultatiRicercaImpiegatoPerCognome.jsp, se premo il tasto
+modifica, devo andare su una pagina che mi permetta di aggiornare
+l impiegato.
+
+ESERCIZIO
+in risultatiRicercaStoricoPerIdImpiegato.jsp, se premo il tasto
+modifica, devo andare su una pagina che mi permetta di aggiornare
+lo storico.
+
+
+ESERCIZIO
+Creare la classe ImpiegatoDaoJpa. 
+copiare questo codice:
+	private EntityManager em;
+	
+	public ImpiegatoDaoJpa() {
+		 EntityManagerFactory emf ;
+		 emf = Persistence.createEntityManagerFactory("Hib4PU");
+		 em = emf.createEntityManager();
+
+	}
+	
+	public void inserisci(Impiegato u) {
+		System.out.println("inserimento");
+		em.getTransaction().begin();
+		em.persist(u);
+		em.getTransaction().commit();
+	}
+	
+ESERCIZIO
+In impiegatoCtr, all inizio del metodo doget, creare una istanza
+della classe ImpiegatoDaoJpa. Creare un Impiegato,
+valorizzarlo e passarlo come parametro al metodo inserisci di
+ImpiegatoDaoJpa.
+
+
+ESERCIZIO
+in ImpiegatoCtr, nel caso di tipoOperazione uguale a inserisci,
+eliminare la riga che fa l inserimento tramite il impiegatodaojdbc
+e usare il metodo inserisci di impiegatodaojpa.
+Inoltre, eliminare le righe dell esercizio precedente.
+
+ESERCIZIO
+Definire come entity la classe ruolo.  Creare una classe
+RuoloDaoJpa con un metodo per l'inserimento.
+In ruoloctr, nel caso di tipoOperazione uguale a inserisci,
+eliminare il ruolodaojdbc inserisci e richiamare il metodo
+inserisci di ruolodaojpa.
+
+
+ESERCIZIO
+Fare la stessa cosa per storico
+
+ESERCIZIO
+In impiegatoDaoJpa, creare il metodo per update e usarlo nel
+controller al posto dell update di jdbc
+
+ESERCIZIO
+In impiegatoDaoJpa, aggiungere un metodo che elimina l'impiegato
+e usarlo in ImpiegatoCtr, al posto di jdbc.
+
+ESERCIZIO
+farlo per storico.
+
+ESERCIZIO
+In impiegatoDaoJpa, creare un metodo che effettua la ricerca per 
+id e usarlo in ImpiegatoCtr.
+
+ESERCIZIO
+In ruoloDaoJpa, creare un metodo che effettua la ricerca per 
+id e usarlo in RuoloCtr.
+
+ESERCIZIO
+In aggiornaruolo.jsp rendere il campo descrizione obbligatorio
+con relativo msg di errore.
+PS in ruoloctr controllare se il parametro descrizione è diverso
+da "". Se non lo è creare una variabile msg con l errore "
+campo obbligatorio", metterla in sessione e ritornare sulla
+pagina aggiornaruolo.jsp, e qui stampare msg.
+
+ESERCIZIO
+In aggiornastorico.jsp rendere il campo id ruolo obbligatorio
+con relativo msg di errore.
+
+ESERCIZIO
+In storicoDaoJpa creare un metodo ricercaPerIdImpiegato e usarlo
+in storicoCtr al posto di storicodaojdbc.
+
+ESERCIZIO
+In impiegatoDaoJpa creare un metodo ricercaPerCognome e usarlo
+in impiegatoCtr al posto di impiegatodaojdbc.
+
+ESERCIZIO
+creare una ricerca impiegato per nome. Creare sia la
+pagina di ricerca che la pagina di mostra i risultati
+(NON VOGLIAMO I TASTI MODIFICA E ELIMINA).
+usare jpa, no jdbc.
+
+
+ESERCIZIO
+In storico, sostituire l'intero idRuolo  con la classe Ruolo.
+PS 
+-cancellare private int idruolo.
+- creare una variabile di tipo Ruolo
+-aggiungere le annotazioni che abbiamo visto.
+- creare get/set per ruolo
+- modificare i getIdRuolo e setIdRuolo per farli funzionare
+Per testarlo, nella ricerca per id storico, nel ctr
+stampare anche la descrizione del ruolo (nella console)
+
+
+ESERCIZIO
+In storico, sostituire l'intero idImpiegato  con la classe Impiegato.
+PS 
+-cancellare private int idimpiegato.
+- creare una variabile di tipo Impiegato
+-aggiungere le annotazioni che abbiamo visto.
+- creare get/set per impiegato
+- modificare i getIdImpiegato e setIdImpiegato per farli funzionare
+Per testarlo, nella ricerca per id storico, nel ctr
+stampare anche il nome dell impiegato (nella console)
+
+ESERCIZIO
+in ricerca storico per id impiegato, stampare il nome dell 
+impiegato al posto della matricola.
+
+ESERCIZIO
+far funzionare updare di storico
+
+ESERCIZIO
+eliminare da storico i metodi seguenti:
+-getIdRuolo
+-getIdImpiegato
+-setIdRuolo
+-setIdImpiegato 
+PS eliminarli uno alla volta e DOPO aver risolto tutti gli 
+eventuali errori procedere con le altre eliminazioni.
+SUGGERIMENTO
+ricordarci che 
+-getIdRuolo corrisponde a getRuolo().getId()
+-getIdImpiegato corrisponde a getImpiegato().getId()
+-setIdRuolo corrisponde a Ruolo r = new Ruolo; r.setId(....); da storico setRuolo(r);
+-setIdImpiegato corrisponde a Impiegato i = new Impiegato; i.setId(....); da storico setImpiegato(i);
+
+
+ESERCIZIO
+Nella classe Impiegato, creato una lista di storici tramite 
+l'annotazione @OneToMany
+
+
+ESERCIZIO
+Nella classe Ruolo, creare una lista di storici tramite 
+l'annotazione @OneToMany
+
+
+ESERCIZIO
+Nel dettaglio Impiegato, dopo la ricerca per matricola, stampare
+la lista di storici.
+
+ESERCIZIO
+Nel dettaglio Ruolo, dopo la ricerca per id, stampare
+la lista di storici.
+
+ESERCIZIO
+Creare una classe Impiegato con i campi nome, cognome, stipendio.
+Creare una classe Test con un main.
+dentro questo main, creare 3 istanze di Impiegato e popolarle.
+creare un arraylist, inserire gli impiegati e ordinarlo 
+per stipendio.
+
+ESERCIZIO
+Nella classe Impiegato, aggiungere il campo eta.
+Creare una classe EtaComparator e usarla per ordinare la lista
+per eta.
+
+
+ESERCIZIO
+Nella classe Impiegato, aggiungere il campo livello (di tipo intero).
+Creare una classe LivelloComparator e usarla per ordinare la lista
+per livello.
+
+ESERCIZIO
+Fare in modo che eliminando l'impiegato, in automatico,
+vengano eliminate anche le righe su storico.
+
+ESERCIZIO
+Fare in modo che eliminando l'impiegato, in automatico,
+vengano eliminate anche le righe su storico.
+
+
+ESERCIZIO
+nel nuovo progetto spring, creare una classe dentro il package rest
+chiamata ProvaRest.
+Creare un metodo che ritorni una string e invocarlo dal
+browser.
+il package rest deve stare sotto il package com.example.com
+
+ESERCIZIO
+creare un package chiamato dto, sotto il package principale.
+Dentro questo package creare una classe ImpiegatoDto.
+Dentro questa classe ci devono essere gli attributi IDENTICI
+a quelli della tabella impiegato.
+creare nel package rest, un servizio rest chiamato ImpiegatoRest,
+con un metodo chiamato ricercaPerId che mi ritorna un oggetto di ImpiegatoDto, valorizzato
+con dati a caso.
+
+ESERCIZIO
+nella classe ImpiegatoRest, passare il parametro id come pathvariable
+
+ESERCIZIO
+In impiegatoRest, aggiungere il prefisso "impiegato".
+l url per invocare il  metodo ricercaPerId dovrà essere solo
+l id stesso.
+Esempio:
+localhost:8080/impiegato/2  --> invoca ricerca per id
+
+ESERCIZIO
+In impiegatoRest, creare un metodo che prende in ingresso il nome
+dell impiegato (request param) e mi ritorna una lista di impiegati,
+popolata a caso.
+
+ESERCIZIO
+creare nel dto la classe RuoloDto. Creare il servizio rest
+RuoloRest, nel package rest. Creare i seguenti metodi:
+ricercaPerId
+
+ESERCIZIO
+creare nel dto la classe StoricoDto. Creare il servizio rest
+StoricoRest, nel package rest. Creare i seguenti metodi:
+ricercaPerId
+ricercaPerIdImpiegato
+
+ESERCIZIO
+In RuoloRest, creare un metodo per simulare l'inserimento di un ruolo.
+
+ESERCIZIO
+In ImpiegatoRest, creare un metodo per simulare l'inserimento
+ di un impiegato.
+
+ESERCIZIO
+In StoricoRest, creare un metodo per simulare l'inserimento
+ di un storico.
+
+ESERCIZIO
+In RuoloRest, creare un metodo per simulare l'update di un ruolo.
+
+
+ESERCIZIO
+In storicorest e impiegatorest, fare i metodi per l update.
+
+ESERCIZIO
+In RuoloRest, creare un metodo per simulare l'eliminazione di un ruolo.
+
+ESERCIZIO
+In storicorest e impiegatorest, fare i metodi per l elimina.
+
+ESERCIZIO
+creare un sottopackage model, copiare tutte le entity del progetto
+precedente. Creare un sottopackage repository e creare 
+una classe ImpiegatoRepository.
+Nel metodo di ricerca per id di  ImpiegaroRest fare 
+una ricerca per id e stamparlo sulla console.
+
+
+ESERCIZIO
+In impiegatoRest, ricercaPerId, ritornare il dto correttamente
+valorizzato, se esiste altrimenti lasciare tutto vuoto.
+
+
+ESERCIZIO
+Nel sottopackage repository e creare 
+una classe RuoloRepository.
+Nel metodo di ricerca per id di  RuoloRepository fare 
+una ricerca per id e  ritornare il dto correttamente
+valorizzato, se esiste altrimenti lasciare tutto vuoto.
+
+ESERCIZIO
+In ruoloRest, salvare l'entity su l db.
+attenzione: il metodo prende in ingresso un dto.
+trasformarlo in ruolo e passarlo all entity
+
+ESERCIZIO
+In ImpiegatoRest, completare il metodo inserisci, come
+visto nell esercizio precedente.
+
+ESERCIZIO
+In storicoRest, completare il metodo inserisci.
+questo vuol dire che il dto avra idRuolo e IdImpiegato.
+allora noi dovremo creare delle variabili di tipo Ruolo e Impiegato
+con gli id passati dal dto. Settarli nella classe Storico
+e procedere al salvataggio.
+
+
+ESERCIZIO
+In ImpiegatoRest, completare il metodo update.
+SUGGERIMENTO: è identico al post.
+
+ESERCIZIO
+In storicoRest, completare il metodo delete storico.
+
+ESERCIZIO
+In impiegatoRest, creare un metodo che effettua la ricerca per
+cognome.
+attenzione: la lista impiegati ritornata dal repository
+deve essere trasformata in lista impiegatidto.
+Quindi scorro lista impiegati (tramite un for), creo un dto,
+lo popolo e lo inserisco nella lista dto.
+
+
+
+
+
+best practies servizi rest 
+eserczi sui builder
+
+
+
+collection -> fare le hashamp
+transazioni
+path relativo
+visibilita operatori
+subquery
+lambda
+file 
+join
+pattern
+
+
+
+

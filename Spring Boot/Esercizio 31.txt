@@ -1,0 +1,3 @@
+ESERCIZIO
+In impiegatoRest, nel metodo ricerca per id,
+usare il metodo fromEntityToDto della classe ImpiegatoBuilderDto 
